@@ -25,14 +25,15 @@ console.log("nice shoes".includes("l, n"));
 // 6. Create a new string from a given string with the first character of the given string added at the front and back, i.e., expected output: Bananas => BBananasB
 // 2 ways:
 console.log("B" + "Bananas" + "B");
-
+// BBananasB
 
 function front_back(str)
 {
-  first = str.slice(0, 1);
+  first = str.slice(0,1);
   return first + str + first;
 }
-console.log(front_back('Bananas'));
+console.log(front_back('Banana'));
+// BBananasB
 
 
 // 7. Create a new string from a given string taking the last 3 characters of the string and add them to both the front and back of the new string. The string length must be 3 or more, i.e., expected output: Scritch => tchScritchtch
@@ -43,6 +44,7 @@ function front_back(str)
   return first + str + first;
 }
 console.log(front_back('SuperDupper'));
+// perSuperDupperper
 
 
 
@@ -54,12 +56,16 @@ const lastLetter = word[word.length-1];
 const remainWord = word.substring(1, word.length-1);
 console.log(lastLetter + remainWord + selectLetter);
 
+// eoogieWoogiB
+
 // 9. Create 3 different variables about yourself, using strings as values, i.e, let firstName = "Maria"; let city = "Berlin", etc. Print a sentence to the console using the variables and string interpolation, i.e., "My name is Maria. I live in Berlin and I am a teacher". 
 const firstName = "Maria";
 const city = "Berlin";
 const position = "student";
 const message = `My name is  ${firstName} . I live in  ${city}  and I am a  ${position}.`;
 console.log(message);
+
+// My name is  Maria . I live in  Berlin  and I am a  student.
 
 // 10. Declare a variable and assign the value "the quick brown fox" (all in lower case). Capitalize the first letter of that string. Print the result to the console.
 
@@ -68,11 +74,4 @@ const firstLetter = fox[0].toUpperCase();
 const remain = fox.slice(1);
 console.log(firstLetter + remain);
 
-// const fox = "the quick brown fox";
-
-// function capitalizeFirstLetter(str) {
-//   return str.charAt(0).toUpperCase() + str.slice(1);
-// }
-
-// capitalizeFirstLetter(fox); 
-// console.log(fox);
+// The quick brown fox
